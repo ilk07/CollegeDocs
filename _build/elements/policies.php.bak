@@ -1,0 +1,14 @@
+<?php
+
+return [
+    'CollegeDocsUserPolicy' => [
+        'description' => 'Политика разрешений на управление документами колледжа в разделе Сведения об образовательной организации',
+        'data' => [
+            'collegedocs_save' => true,
+			'collegedocs_view' => true,
+			'collegedocs_list' => true,
+			'collegedocs_save' => true,
+			 'mvtdocs_remove' => true,
+        ]
+    ],
+];

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="CollegeDocs\Model" baseClass="xPDO\Om\xPDOObject" platform="mysql" defaultEngine="InnoDB" version="3.0">
+    <object class="CollegeDocsItem" table="collegedocs_items" extends="xPDO\Om\xPDOSimpleObject">
+        
+		<field key="name" dbtype="varchar" precision="255" phptype="string" null="false" default=""/>
+		<field key="description" dbtype="text" phptype="string" null="true" default=""/>
+		<field key="resource_id" dbtype="int" precision="11" phptype="integer" attributes="unsigned" null="false"/>
+		<field key="url" dbtype="text" phptype="string" null="true" default=""/>
+		<field key="load_name" dbtype="text" phptype="string" null="false" default=""/>
+		<field key="filetype" dbtype="varchar" precision="100" phptype="string" null="true"/>
+		<field key="catpath" dbtype="varchar" precision="255" phptype="string" null="true" default=""/>		
+		
+		<field key="source" dbtype="int" precision="11" phptype="integer" null="true" default="null"/>	
+		
+		<field key="itemtype" dbtype="varchar" precision="50" phptype="string" null="false" default=""/>
+		<field key="doctype" dbtype="varchar" precision="255" phptype="string" null="true" default=""/>
+		<field key="active" dbtype="tinyint" precision="1" phptype="boolean" null="true" default="1"/>
+
+		<aggregate alias="Resource" class="modResource" local="resource_id" foreign="id" cardinality="one" owner="foreign"/>
+
+        <index alias="name" name="name" primary="false" unique="false" type="BTREE">
+            <column key="name" length="" collation="A" null="false"/>
+        </index>
+        <index alias="active" name="active" primary="false" unique="false" type="BTREE">
+            <column key="active" length="" collation="A" null="false"/>
+        </index>
+				
+		
+    </object>
+</model>    

@@ -1,0 +1,15 @@
+<?php
+
+return [
+    'CollegeDocsUserPolicyTemplate' => [
+        'description' => 'A policy for CollegeDocs',
+        'template_group' => 1,
+		
+        'permissions' => [
+            'collegedocs_save' => [],
+            'collegedocs_view' => [],
+            'collegedocs_list' => [],
+            'collegedocs_remove' => [],
+        ]
+    ],
+];

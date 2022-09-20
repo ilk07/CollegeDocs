@@ -1,0 +1,45 @@
+<?php
+
+return [
+    'docs_category' => [
+		'key' => 'collegedocs_docs_category',
+		'name' => 'setting_collegedocs.docs_category',
+		'description' => 'setting_collegedocs.docs_category_desc',
+	    'xtype' => 'numberfield',
+		'lexicon' => 'collegedocs:setting',
+        'value' => 0,
+    ],
+	'doc_types' => [
+		'key' => 'collegedocs_doc_types',
+		'name' => 'setting_collegedocs.doc_types',
+		'description' => 'setting_collegedocs.doc_types_desc',
+	    'xtype' => 'textfield',
+		'lexicon' => 'collegedocs:setting',
+        'value' => 'скан-копия, заверенная копия, документ с электронной подписью',
+    ],
+	'file_types' => [
+		'key' => 'collegedocs_file_types',
+		'name' => 'setting_collegedocs.file_types',
+		'description' => 'setting_collegedocs.file_types_desc',
+	    'xtype' => 'textfield',
+		'lexicon' => 'collegedocs:setting',
+        'value' => 'pdf,doc,docx,xls,xlsx',
+    ],
+	'file_types' => [
+		'key' => 'collegedocs_source',
+		'name' => 'setting_collegedocs.source',
+		'description' => 'setting_collegedocs.source_desc',
+	    'xtype' => 'numberfield',
+		'lexicon' => 'collegedocs:setting',
+        'value' => '1',
+    ],
+	'file_types' => [
+		'key' => 'collegedocs_doccat',
+		'name' => 'setting_collegedocs_doccat',
+		'description' => 'setting_collegedocs_doccat_desc',
+	    'xtype' => 'textfield',
+		'lexicon' => 'collegedocs:setting',
+        'value' => 'assets/docs/',
+    ],
+		
+];

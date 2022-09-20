@@ -1,0 +1,9 @@
+Changelog for CollegeDocs.
+
+3.0.0-pl
+==============
+- Requires MODX 3.
+- Requires PHP 7.2+.
+- Refactored to use PSR-4 autoload.
+
+- Use only for MODX 3. or 3+
