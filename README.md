@@ -1,30 +1,29 @@
-## Quick start
+# College Docs
 
-* Install MODX Revolution
+Комипонент управления документами для образовательных организаций, использующих CMS MODX
 
-* Upload this package into the `Extras` directory in the root of site
+## Кому и зачем это нужно
+В первую очередь образовательным организациям.  
+Все колледжи и вузы должны иметь на своем официальном сайте раздел "Сведения об образовательной организации" в соответствии с требованиями Рособрнадзора.  
+Контент-менеджерам или сотрудникам организации обычно неудобно переходить от страницы к странице и вручную добавлять, удалять или редактирвоать обязательные для размещения файлы и документы.  
+Компонент College Docs позволяет из системы администрирования управлять связью страниц и разделов сайта с файлами и ссылками.
 
-* You need to rename it to `AnyOtherName` your package, so enter into SSH console and run
-```
-php ~/www/Extras/CollegeDocs/rename_it.php AnyOtherName
-```
-*path on your site may differs*
+## Что умеет
+1. Добавлять файлы к ресурсам
+2. Добавлять ссылки на стороннние файлы и документы к ресурсам
+3. Управлять отображением файлов на страницах сайта
+4. Аккуратно складывать файлы в отдельные папки
 
-* Then install it on dev site
-```
-php ~/www/Extras/AnyOtherName/_build/build.php
-``` 
+## Как работает
+1. Скачайте и установите компонент на свою сборку MODX 3
+2. Задайте системные настройки для "collegedocs":
+   - Типы документов (например: скан-копия, документ с жлектронной полдписью)
+   - Путь к папке сохранения документов медиа-источника
+   - Id раздела сведений об организации
+   - ID медиа источника для документов
+3. Откройте раздлел Пакеты и выберите "Документы колледжа"
+4. Добавляйте, удаляйте, включайте, отключайте файлы и ссылки для страниц вашего сайта
 
-## Settings
+**Обратите внимание, что компонент поставляется без чанков и сниппетов для вывода на странице, их придется написать самостоятельно!**
 
-See `_build/config.inc.php` for editable package options.
-
-All resolvers and elements are in `_build` path. All files that begins not from `.` or `_` will be added automatically. 
-
-If you will add a new type of element, you will need to add the method with that name into `build.php` script as well.
-
-## Build and download
-
-You can build package at any time by opening `http://dev.site.com/Extras/AnyOtherName/_build/build.php`
-
-If you want to download built package - just add `?download=1` to the address.
+Лицензия GNU GPL v2.
