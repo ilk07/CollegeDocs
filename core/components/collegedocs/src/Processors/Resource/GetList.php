@@ -13,8 +13,8 @@ class GetList extends GetListProcessor
     public $objectType = 'modResource';
     public $classKey = modResource::class;
     public $defaultSortField = 'menuindex';
-    public $defaultSortDirection = 'DESC';
-    //public $permission = 'for college list acces must be added college namespace';
+    public $defaultSortDirection = 'ASC';
+    //public $permission = 'collegedocs_list';
 
 
     /**

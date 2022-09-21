@@ -2,14 +2,14 @@
 
 return [
     'CollegeDocsUserPolicyTemplate' => [
-        'description' => 'A policy for CollegeDocs',
+        'description' => 'Политика администрирования документов раздела Сведения об образвоательной организации',
         'template_group' => 1,
 		
         'permissions' => [
-            'collegedocs_save' => [],
-            'collegedocs_view' => [],
-            'collegedocs_list' => [],
-            'collegedocs_remove' => [],
+            'save' => [],
+            'view' => [],
+            'list' => [],
+            'remove' => [],
         ]
     ],
 ];

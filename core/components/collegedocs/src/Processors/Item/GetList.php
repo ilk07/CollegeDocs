@@ -15,7 +15,7 @@ class GetList extends GetListProcessor
     public $classKey = CollegeDocsItem::class;
     public $defaultSortField = 'id';
     public $defaultSortDirection = 'DESC';
-    public $permission = 'list';
+    public $permission = 'collegedocs_list';
 
 
     /**

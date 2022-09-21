@@ -10,7 +10,7 @@ class Update extends UpdateProcessor
     public $objectType = 'CollegeDocsItem';
     public $classKey = CollegeDocsItem::class;
     public $languageTopics = ['collegedocs'];
-    public $permission = 'save';
+    public $permission = 'collegedocs_save';
 
 
     /**

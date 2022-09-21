@@ -10,7 +10,7 @@ class Remove extends Processor
     public $objectType = 'CollegeDocsItem';
     public $classKey = CollegeDocsItem::class;
     public $languageTopics = ['collegedocs'];
-    public $permission = 'remove';
+    public $permission = 'collegedocs_remove';
 
 
     /**

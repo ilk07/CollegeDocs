@@ -13,8 +13,8 @@ class GetList extends GetListProcessor
     public $objectType = 'modResource';
     public $classKey = modResource::class;
     public $defaultSortField = 'menuindex';
-    public $defaultSortDirection = 'DESC';
-    //public $permission = 'for college list acces must be added college namespace';
+    public $defaultSortDirection = 'ASC';
+    //public $permission = 'list';
 
 
     /**
@@ -52,7 +52,7 @@ class GetList extends GetListProcessor
 				'id:IN' => $childs,
 			]);
 		} else {
-			$this->modx->log(MODX_LOG_LEVEL_ERROR, 'Категория меньше 0 ???');
+			$this->modx->log(MODX_LOG_LEVEL_ERROR, 'Отсутствует категория');
 		}
 		
         return $c;

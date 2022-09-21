@@ -10,7 +10,7 @@ class Get extends GetProcessor
     public $objectType = 'CollegeDocsItem';
     public $classKey = CollegeDocsItem::class;
     public $languageTopics = ['collegedocs:default'];
-    public $permission = 'view';
+    public $permission = 'collegedocs_view';
 
 
     /**

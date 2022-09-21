@@ -10,7 +10,7 @@ class Create extends CreateProcessor
     public $objectType = 'CollegeDocsItem';
     public $classKey = CollegeDocsItem::class;
     public $languageTopics = ['collegedocs'];
-    public $permission = 'create';
+    public $permission = 'collegedocs_save';
 
 
     /**

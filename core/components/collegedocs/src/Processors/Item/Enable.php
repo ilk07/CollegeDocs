@@ -11,7 +11,7 @@ class Enable extends Processor
     public $objectType = 'CollegeDocsItem';
     public $classKey = CollegeDocsItem::class;
     public $languageTopics = ['collegedocs'];
-    public $permission = 'save';
+    public $permission = 'collegedocs_save';
 
 
     /**
